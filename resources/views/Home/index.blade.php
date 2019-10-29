@@ -11,5 +11,6 @@
     <p>{{ $globalProjectName }}</p>
     @include('Home.test')
     @sayhi
+    @saySomething('hello')
 @endsection
 

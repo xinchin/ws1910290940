@@ -24,8 +24,14 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+
+        // 自定義 Blade 指令
         Blade::directive('sayhi', function(){
             return '<?= "<h2>say hi~~</h2>"; ?>';
+        });
+
+        Blade::directive('saySomething',function($msg){
+            return "<?php echo $msg; ?>";
         });
 
 
