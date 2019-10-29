@@ -10,5 +10,6 @@
     @parent
     <p>{{ $globalProjectName }}</p>
     @include('Home.test')
+    @sayhi
 @endsection
 
