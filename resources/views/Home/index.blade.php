@@ -8,6 +8,7 @@
 
 @section('footer')
     @parent
+    <p>{{ $globalProjectName }}</p>
     @include('Home.test')
 @endsection
 

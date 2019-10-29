@@ -24,5 +24,9 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //
+        view()->share('globalProjectName', 'ws1910290940');
+        view()->composer('Home.test',function($view){
+            $view->with('globalTest', 'from composer');
+        });
     }
 }
