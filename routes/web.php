@@ -19,6 +19,7 @@ Route::get('/hello', 'HelloController@index')->name('hello.index');
 
 // Home
 Route::get('/home', 'Home\IndexController@index');
+Route::get('/home/test/index', 'Home\TestController@index');
 
 // Resource Controller
 Route::resource('test', 'TestController');
