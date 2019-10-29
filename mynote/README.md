@@ -6,3 +6,8 @@
 
 ### clear
 > php artisan route:clear
+
+## Controller
+
+### command
+> php artisan make:controller Home/IndexController
