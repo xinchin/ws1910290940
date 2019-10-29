@@ -16,3 +16,6 @@ Route::get('/', function () {
 });
 
 Route::get('/hello', 'HelloController@index')->name('hello.index');
+
+// Resource Controller
+Route::resource('test', 'TestController');

@@ -3,3 +3,7 @@
 
 ## create new controller
 > php artisan make:controller HelloController
+
+
+## create resource controller
+> php  artisan make:controller TestController --resource
