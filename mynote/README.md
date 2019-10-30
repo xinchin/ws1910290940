@@ -11,3 +11,7 @@
 
 ### command
 > php artisan make:controller Home/IndexController
+
+## Migration
+
+> php artisan migrate
