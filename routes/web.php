@@ -23,6 +23,7 @@ Route::get('/home/test/index', 'Home\TestController@index')->name('hoem.test.ind
 Route::get('/home/test/test', 'Home\TestController@test')->name('home.test.test');
 Route::get('/home/test/edit', 'Home\TestController@edit')->name('home.test.edit');
 Route::post('/home/test/store', 'Home\TestController@store')->name('home.test.store');
+Route::get('/home/test/dbtest', 'Home\TestController@dbtest')->name('home.test.dbtest');
 
 // Resource Controller
 Route::resource('test', 'TestController');
