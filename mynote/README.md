@@ -15,3 +15,5 @@
 ## Migration
 
 > php artisan migrate
+
+>php artisan make:migration create_mytest_table
