@@ -17,3 +17,12 @@
 > php artisan migrate
 
 >php artisan make:migration create_mytest_table
+
+
+## Seeder
+
+> php artisan make:seeder MytestTableSeeder
+
+> php artisan db:seed
+
+> php artisan db:seed --class=MytestTableSeeder
