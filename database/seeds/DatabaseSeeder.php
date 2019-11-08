@@ -15,6 +15,11 @@ class DatabaseSeeder extends Seeder
     {
         // $this->call(UsersTableSeeder::class);
         // factory(User::class, 10)->create();
-        factory(Article::class, 10)->create();
+        // factory(Article::class, 10)->create();
+
+        factory(User::class, 10)->create()->each(function ($u) {
+            $u->article()->save(factory(Article::class)->make());
+        });
+
     }
 }
