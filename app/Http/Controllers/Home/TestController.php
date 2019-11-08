@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Home;
 
+use App\Contact;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
@@ -30,6 +31,9 @@ class TestController extends Controller
 
     public function dbtest(){
         $result = DB::select('select * from mytest');
+        var_dump($result);
+
+        $result = Contact::all();
         var_dump($result);
     }
 }

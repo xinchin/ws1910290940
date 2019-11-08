@@ -26,3 +26,14 @@
 > php artisan db:seed
 
 > php artisan db:seed --class=MytestTableSeeder
+
+
+---------
+
+## Model
+
+> php artisan make:model Contact
+
+
+## Factory
+> php artisan make:factory ContactFactory
