@@ -27,3 +27,7 @@ Route::get('/home/test/dbtest', 'Home\TestController@dbtest')->name('home.test.d
 
 // Resource Controller
 Route::resource('test', 'TestController');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

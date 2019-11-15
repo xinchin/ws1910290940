@@ -37,3 +37,16 @@
 
 ## Factory
 > php artisan make:factory ContactFactory
+
+-------
+
+## Auth
+### Rerference
+https://learnku.com/docs/laravel/6.x/frontend/5149
+
+### Command
+composer require laravel/ui --dev
+php artisan ui vue --auth
+npm install
+npm run dev
+php artisan migrate
