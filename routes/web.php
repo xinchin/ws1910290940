@@ -25,6 +25,10 @@ Route::get('/home/test/edit', 'Home\TestController@edit')->name('home.test.edit'
 Route::post('/home/test/store', 'Home\TestController@store')->name('home.test.store');
 Route::get('/home/test/dbtest', 'Home\TestController@dbtest')->name('home.test.dbtest');
 
+Route::get('/testauth',function(){
+    return 'hello auth';
+})->middleware('auth');
+
 // Resource Controller
 Route::resource('test', 'TestController');
 
